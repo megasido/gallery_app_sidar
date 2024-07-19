@@ -16,15 +16,16 @@ class _AppHomeState extends State<AppHome> {
     const ProfileScreen(),
   ];
 
+  List<String> appBarTitles = [
+    "My Gallery",
+    "About Me",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "My Gallery",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: const Color.fromARGB(255, 255, 70, 100),
+        title: Text(appBarTitles[currentindex]),
       ),
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (int index) {

@@ -5,7 +5,7 @@ import 'package:my_gallery_app/src/features/gallery/presentation/gallery_card.da
 class GalleryScreen extends StatelessWidget {
   const GalleryScreen({super.key});
 
-  final double gridPadding = 20;
+  final double gridPadding = 10;
 
   @override
   Widget build(BuildContext context) {
@@ -15,16 +15,7 @@ class GalleryScreen extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: gridPadding,
         crossAxisSpacing: gridPadding,
-        children: [
-          GalleryCard(item: galleryData[0]),
-          GalleryCard(item: galleryData[1]),
-          GalleryCard(item: galleryData[2]),
-          GalleryCard(item: galleryData[3]),
-          GalleryCard(item: galleryData[4]),
-          GalleryCard(item: galleryData[5]),
-          GalleryCard(item: galleryData[6]),
-          GalleryCard(item: galleryData[7]),
-        ],
+        children: galleryData.map((item) => GalleryCard(item: item)).toList(),
       ),
     );
   }

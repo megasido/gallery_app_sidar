@@ -14,7 +14,7 @@ List<GalleryItem> galleryData = [
     imagePath: 'assets/images/florian-wehde-uFGi0_YciE0-unsplash.jpg',
   ),
   GalleryItem(
-    imageTitle: 'The Holocaust Memorial',
+    imageTitle: 'The Holocaust \nMemorial',
     imageDate: '2023-07-03',
     imageDescription: 'The Holocaust Memorial in Berlin',
     imagePath: 'assets/images/giulia-gasperini-8S-D-UodlHU-unsplash.jpg',
@@ -32,19 +32,19 @@ List<GalleryItem> galleryData = [
     imagePath: 'assets/images/karli-cumber-LCsKwZDxLi8-unsplash.jpg',
   ),
   GalleryItem(
-    imageTitle: 'Berliner Fernsehturm',
+    imageTitle: 'Berliner \nFernsehturm',
     imageDate: '2023-07-06',
     imageDescription: 'Berliner Fernsehturm in Berlin',
     imagePath: 'assets/images/jonny-mckenna-iwpCOs7Okdw-unsplash.jpg',
   ),
   GalleryItem(
-    imageTitle: 'Victory Column (Siegessäule)',
+    imageTitle: 'Victory Column \n(Siegessäule)',
     imageDate: '2023-07-07',
     imageDescription: 'Victory Column in Berlin',
     imagePath: 'assets/images/chris-kursikowski-g4pEv4NoFVw-unsplash.jpg',
   ),
   GalleryItem(
-    imageTitle: 'Memorial of the Berlin Wall',
+    imageTitle: 'Memorial of the \nBerlin Wall',
     imageDate: '2023-07-08',
     imageDescription: 'Memorial of the Berlin Wall in Berlin',
     imagePath: 'assets/images/ben-kupke-kDOkE_Spa8I-unsplash.jpg',

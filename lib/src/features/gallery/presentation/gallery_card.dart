@@ -14,11 +14,7 @@ class GalleryCard extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (contex) {
-              return Center(
-                child: DetailsScreen(item: item),
-              );
-            },
+            builder: (context) => DetailsScreen(item: item),
           ),
         );
       },
@@ -46,6 +42,7 @@ class GalleryCard extends StatelessWidget {
                 width: double.infinity,
                 child: Text(
                   item.imageTitle,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
             ),

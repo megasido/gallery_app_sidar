@@ -30,17 +30,17 @@ class DetailsScreen extends StatelessWidget {
             const SizedBox(height: 16),
             Text(
               item.imageTitle,
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
             const SizedBox(height: 8),
             Text(
               item.imageDate,
-              style: const TextStyle(fontSize: 16, color: Colors.grey),
+              style: Theme.of(context).textTheme.bodySmall,
             ),
             const SizedBox(height: 16),
             Text(
               item.imageDescription,
-              style: const TextStyle(fontSize: 18),
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],
         ),

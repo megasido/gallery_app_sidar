@@ -7,9 +7,8 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -22,14 +21,14 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 25),
-            const Text(
+            Text(
               'John Doe',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
             const SizedBox(height: 8),
-            const Text(
-              'A photographer based in Berlin. A graduate of an art school, enjoys hiking and photography as hobbies. This project is created to explore and capture the important tourist spots of Berlin. Thank you for taking a look!',
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+            Text(
+              'A photographer based in Berlin. A graduate of an art school, enjoys hiking and photography as hobbies. This project is created to explore and capture the important tourist spots of Berlin. \nThank you for taking a look!',
+              style: Theme.of(context).textTheme.bodyMedium,
               textAlign: TextAlign.center,
             ),
           ],
